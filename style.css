@@ -3,11 +3,15 @@
     --foreground-color: #c4c4c4;
     --highlight-color: #c38d23;
 
-    --main-margin: 32px; 
+    --main-margin: 32px;
     --bar-height: 48px;
+
+    --outline-size: 16px;
+
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 
@@ -15,6 +19,10 @@ html, body {
     padding: 0;
 
     background-color: var(--background-color);
+    color: var(--foreground-color);
+
+    font-family: monospace;
+    font-size: 100%;
 
     overflow: hidden;
 }
@@ -22,13 +30,72 @@ html, body {
 #MainWindow {
     display: grid;
     grid-template-rows: var(--bar-height) auto var(--bar-height);
-    
+
     margin: var(--main-margin);
-    
+
     height: calc(100% - calc(var(--main-margin) * 2));
     width: calc(100% - calc(var(--main-margin) * 2));
+
+    font-size: 32px;
+}
+
+#MainContent {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+    padding: 1em 0 1em 0;
+    gap: 1em;
+}
+
+#PageContent {
+    flex: 1;
+    flex-shrink: 1;
+}
+
+#Directory {
+    flex: 0.25;
+    flex-shrink: 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .bar {
     background-color: var(--foreground-color);
+}
+
+.selection-box {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--foreground-color);
+}
+
+.outline {
+    outline: solid var(--foreground-color);
+    outline-width: var(--outline-size);
+    outline-offset: calc(0px - var(--outline-size));
+    padding: calc(2 * var(--outline-size));
+}
+
+.section-header {
+    font-size: 48px;
+}
+
+.indent-1 {
+    text-indent: 0rem;
+}
+
+.indent-2 {
+    text-indent: 1rem;
+}
+
+.indent-3 {
+    text-indent: 2rem;
+}
+
+.a-block {
+    display: block;
 }
