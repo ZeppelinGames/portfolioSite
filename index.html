@@ -3,38 +3,28 @@
 
 <head>
     <title>Mark Saba</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark Saba">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="MainWindow">
-        <div class="bar"></div>
-        <section id="MainContent">
-            <section id="PageContent" class="outline">
+    <div id="main-window">
 
-            </section>
-
-            <section id="Directory" class="outline">
-                <div class="section-header">DIR</div>
-
-                <div class="indent-1">C:/</div>
-                <div class="indent-2">Desktop</div>
-
-                <div class="flex-row indent-3">
-                    <div class="selection-box"></div>
-                    <a href="./" class="a-block">Home</a>
-                </div>
-                <div class="flex-row indent-3">
-                    <div class="selection-box"></div>
-                    <a href="./" class="a-block">About Me</a>
-                </div>
-                <div class="flex-row indent-3">
-                    <div class="selection-box"></div>
-                    <a href="./" class="a-block">Projects</a>
-                </div>
-            </section>
-        </section>
-        <div class="bar"></div>
+        <div id="main-grid">
+            <div class="top-grid bar"></div>
+            
+            <div id="main-content" class="content-window">&nbsp;</div>
+            <div id="log-content" class="content-window">&nbsp;</div>
+            
+            <div id="projects-content" class="content-window">&nbsp;</div>
+            <div id="directory-content" class="content-window">&nbsp;</div>
+            
+            <div class="bottom-grid bar"></div>
+        </div>
     </div>
 </body>
 
