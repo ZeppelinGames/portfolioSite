@@ -15,33 +15,76 @@
 <body>
     <div id="main-window">
 
-        <div id="main-grid">
-            <div class="top-grid bar"></div>
+        <div class="bar"></div>
+        <div id="main-flex">
 
             <div id="main" class="content-window">
-                <div class="window-header">MAIN.MD</div>
-                <div class="main-window-content">
+                <div id="main-window-content">
+                    <div class="window-header">MAIN.MD</div>
                     <div class="subtitle">Hey I'm</div>
                     <div class="title">Mark Saba.</div>
-                    <div class="subtitle">game developer. frontend dev. hardware tinkerer</div>
+                    <div class="subtitle">game developer. frontend dev. hardware tinkerer.</div>
+                    <div class="links">
+                        <a href="https://github.com/zeppelingames" target="_blank">
+                            <img class="linkImage" alt="Github" src="./assets/imgs/github-mark-white.png">
+                        </a>
+                        <a href="https://zeppelin-games.itch.io/" target="_blank">
+                            <img class="linkImage" alt="Itch.io" src="./assets/imgs/itchio.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/mark-saba-672691250/" target="_blank">
+                            <img class="linkImage" alt="LinkedIn" src="./assets/imgs/linkedin.png">
+                        </a>
+                        <a href="https://twitter.com/zeppelin_games" target="_blank">
+                            <img class="linkImage" alt="Twitter" src="./assets/imgs/twitter.png">
+                        </a>
+
+                    </div>
                 </div>
             </div>
-            <div id="log" class="content-window">
-                <div class="window-header">CONSOLE.TXT</div>
-                <ul class="text-content">
-                    <li>site accessed</li>
-                <ul>
+
+            <div id="right-panel">
+                <div id="directory" class="content-window">
+                    <div class="window-header">DIR.EXE</div>
+                    <div class="window-content">
+                        <ul>
+                            <li>Home</li>
+                            <li>Projects
+                                <ul>
+                                    <li>Games
+
+                                        <ul>
+                                            <li>Cardboard Chef</li>
+                                            <li>Aegis</li>
+                                            <li>Sole</li>
+                                            <li>Reunion</li>
+                                        </ul>
+                                    </li>
+                                    <li>Websites
+                                        <ul>
+                                            <li>Kopi Su Landing Page</li>
+                                            <li>Hermannsburg Potters</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Tinkering
+                                <ul>
+                                    <li>NEC</li>
+                                    <li>ESP32</li>
+                                </ul>
+                            </li>
+                            <li>About Me</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="projects" class="content-window">
+                    <div class="window-header">PROJECTS.EXE</div>
+                </div>
             </div>
 
-            <div id="projects" class="content-window">
-                <div class="window-header">PROJECTS.EXE</div>
-            </div>
-            <div id="directory" class="content-window">
-                <div class="window-header">DIR.EXE</div>
-            </div>
-
-            <div class="bottom-grid bar"></div>
         </div>
+        <div class="bar"></div>
     </div>
 </body>
 

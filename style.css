@@ -20,9 +20,8 @@ html {
     color: var(--foreground-color);
 
     font-family: ubuntu;
-    font-size: 100%;
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -33,17 +32,16 @@ body {
 }
 
 #main-window {
-    width: 100%;
     height: 100%;
 
-    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    /* gap: var(--main-padding); */
 }
 
-#main-grid {
-    display: grid;
-
-    grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
-    grid-template-columns: 3fr 2fr;
+#main-flex {
+    display: flex;
+    flex-direction: row;
 
     box-sizing: border-box;
 
@@ -52,62 +50,31 @@ body {
 
     gap: var(--main-padding);
     padding: var(--main-padding);
+
+    font-size: 2em;
+}
+
+@media screen and (max-width: 769px) {
+    #main-flex {
+        flex-direction: column;
+    }
 }
 
 #main {
-    background-color: #F96B55;
-    grid-row-start: 2;
-    grid-column-start: 1;
-
-    grid-row-end: 5;
-    grid-column-end: 1;
+    width: 0;
 }
 
 .bar {
     background-color: var(--foreground-color);
+    height: 32px;
+    margin: 8px;
 }
 
-.top-grid {
-    grid-row-start: 1;
-    grid-row-end: 1;
+#right-panel {
+    display: flex;
+    flex-direction: column;
 
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.bottom-grid {
-    grid-row-start: 6;
-    grid-row-end: 6;
-
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-#log {
-    background-color: #7FA5E8;
-    grid-row-start: 5;
-    grid-column-start: 1;
-
-    grid-row-end: 6;
-    grid-column-end: 1;
-}
-
-#projects {
-    background-color: #8EF9A6;
-    grid-row-start: 4;
-    grid-column-start: 2;
-
-    grid-row-end: 6;
-    grid-column-end: 2;
-}
-
-#directory {
-    background-color: #D995D7;
-    grid-row-start: 2;
-    grid-column-start: 2;
-
-    grid-row-end: 4;
-    grid-column-end: 2;
+    gap: var(--main-padding);
 }
 
 .content-window {
@@ -117,9 +84,11 @@ body {
     padding: var(--main-padding);
 
     color: white;
+
+    flex: 1;
 }
 
-.main-window-content {
+#main-window-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,4 +114,16 @@ body {
 
 ul {
     list-style: square;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    max-height: 32px;
+}
+
+.linkImage {
+    height: 100%;
 }
