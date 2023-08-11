@@ -58,6 +58,10 @@ body {
     #main-flex {
         flex-direction: column;
     }
+
+    #main {
+        width: auto !important;
+    }
 }
 
 #main {
@@ -95,7 +99,6 @@ body {
     align-items: left;
 
     height: 100%;
-
     gap: 1em;
 }
 
