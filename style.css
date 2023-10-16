@@ -147,15 +147,20 @@ ul {
 .links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
     gap: 0.5em;
 
     max-height: 32px;
-
-    justify-content: center;
 }
 
 .linkImage:hover {
     filter: brightness(50%) sepia(100) hue-rotate(87deg) saturate(1000%) brightness(100%);
+}
+
+.linkLink {
+    display: contents;
+    text-decoration: underline;
 }
 
 .linkImage {
