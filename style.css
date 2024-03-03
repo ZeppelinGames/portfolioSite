@@ -21,7 +21,7 @@ html {
 
     font-family: ubuntu;
 
-    overflow: hidden;
+    overflow-x: hidden;
 
     user-select: none;
 }
@@ -47,65 +47,9 @@ a:hover {
     color:#00ff00;
 }
 
-#backgroundLeft, #backgroundRight {
-    background: none;
-    position: absolute;
-    image-rendering: pixelated;
-
-    z-index: -100;
-
-    height: max(50vw, 500px);
-}
-
-#backgroundLeft  {
-    left: -10%;
-
-    top: 0%;
-}
-
-#backgroundRight {
-    z-index: -101;
-
-    right: -10%;
-    bottom: 7%;
-}
-
-#main-window {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    /* gap: var(--main-padding); */
-}
-
-#main-flex {
-    display: flex;
-    flex-direction: row;
-
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 100%;
-
-    gap: var(--main-padding);
-    padding: var(--main-padding);
-
-    font-size: 2em;
-}
-
-@media screen and (max-width: 769px) {
-    #main-flex {
-        flex-direction: column;
-    }
-
-    #main {
-        width: auto !important;
-    }
-}
-
-#main {
-    width: 0;
+hr {
+    margin: 1em auto 1em auto;
+    width: 90vw;
 }
 
 .bar {
@@ -165,4 +109,29 @@ ul {
 
 .linkImage {
     height: 100%;
+}
+
+.downArrow {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 25px);
+
+    width: 5%;
+    max-width: 50px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+@keyframes jumpInfinite {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 40px;
+        opacity: 50%;
+    }
+
+    100% {
+        bottom: 20px;
+    }
 }
