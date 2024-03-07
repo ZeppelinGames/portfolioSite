@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Project from './components/Project';
 import './App.css';
 
 import GithubLogo from './assets/imgs/github-mark-white.png';
@@ -56,85 +57,59 @@ class App extends Component {
                         </div>
                     </div>
 
-                    <img className="downArrow" src={ScrollArrow} alt="Scroll Arrow"/>
+                    <img className="downArrow" src={ScrollArrow} alt="Scroll Arrow" />
                 </div>
 
-                <hr/>
+                <hr />
 
-                    <div id="main-content">
-                        <section id="projects-section">
-                            <div className="content-title">Projects</div>
-                            <div className="projects">
+                <div id="main-content">
+                    <section id="projects-section">
+                        <div className="content-title">Projects</div>
+                        <div className="projects">
 
-                                <a className="project" href="https://www.themasterspupil.com/" target="_blank">
-                                    <img src={TMPLogo} className="project-image" />
-                                    <div className="project-content">
-                                        <div className="project-title">
-                                            The Master's Pupil
-                                        </div>
-                                        <div className="project-description">
-                                            Description goes here about what I worked on
-                                        </div>
-                                    </div>
-                                </a>
+                            <Project
+                                projectName="The Master's Pupil"
+                                projectDescription="Description goes here"
+                                projectImage={TMPLogo}
+                                projectLink="https://www.themasterspupil.com/"
+                            />
 
-                                <a className="project" href="https://www.whichwayup.info/" target="_blank">
-                                    <img src={WWULogo} className="project-image" />
-                                    <div className="project-content">
-                                        <div className="project-title">
-                                            Which Way Up
-                                        </div>
-                                        <div className="project-description">
-                                            Description goes here about what I worked on
-                                        </div>
-                                    </div>
-                                </a>
+                            <Project
+                                projectName="Which Way Up"
+                                projectDescription="Description goes here"
+                                projectImage={WWULogo}
+                                projectLink="https://www.whichwayup.info/"
+                            />
 
-                                <a className="project" href="https://www.kopisustudio.com/" target="_blank">
-                                    <img src={KopiLogo} className="project-image" />
-                                    <div className="project-content">
-                                        <div className="project-title">
-                                            Kopi Su Studio Website
-                                        </div>
-                                        <div className="project-description">
-                                            Description goes here about what I worked on
-                                        </div>
-                                    </div>
-                                </a>
+                            <Project
+                                projectName="Kopi Su Studio Website"
+                                projectDescription="Description goes here"
+                                projectImage={KopiLogo}
+                                projectLink="https://www.kopisustudio.com/"
+                            />
 
-                                <a className="project" href="https://kopisustudio.com/work/eternalforest" target="_blank">
-                                    <img src={EternalForestLogo} className="project-image" />
-                                    <div className="project-content">
-                                        <div className="project-title">
-                                            The Eternal Forest
-                                        </div>
-                                        <div className="project-description">
-                                            Description goes here about what I worked on
-                                        </div>
-                                    </div>
-                                </a>
+                            <Project
+                                projectName="The Eternal Forest"
+                                projectDescription="Description goes here"
+                                projectImage={EternalForestLogo}
+                                projectLink="https://kopisustudio.com/work/eternalforest"
+                            />
 
-                                <a className="project" href="https://www.hermannsburgpotters.com.au/" target="_blank">
-                                    <img src={HermannsburgLogo} className="project-image" />
-                                    <div className="project-content">
-                                        <div className="project-title">
-                                            Hermannsburg Potters Landing Page
-                                        </div>
-                                        <div className="project-description">
-                                            Description goes here about what I worked on
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </section>
-                    </div>
-
-                    <hr />
-
-                    <section className="footer">
-                        Mark Saba 2024
+                            <Project
+                                projectName="Hermannsburg Potters Landing Page"
+                                projectDescription="Description goes here"
+                                projectImage={HermannsburgLogo}
+                                projectLink="https://www.hermannsburgpotters.com.au/"
+                            />
+                        </div>
                     </section>
+                </div>
+
+                <hr />
+
+                <section className="footer">
+                    Mark Saba 2024
+                </section>
             </div>
         );
     }

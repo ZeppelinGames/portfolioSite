@@ -96,49 +96,9 @@
     gap: 1em;
 }
 
-.project {
-    position: relative;
-    box-sizing: border-box;
-
-    width: min(50vh, 100%);
-}
-
-.project-image {
-    border-radius: 1em;
-    width: 100%;
-
-    opacity: 100%;
-    transition: opacity 0.3s;
-}
-
-.project-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    padding: 1em;
-    margin: 1em;
-
-    color: white;
-
-    opacity: 0%;
-    transition: opacity 0.3s;
-}
-
-.project-title {
-    font-size: 3em;
-    font-weight: bold;
-}
-
 .footer {
     margin: 1em;
     padding: 1em;
     text-align: center;
 }
 
-.project:hover .project-image {
-    opacity: 25%;
-}
-.project:hover .project-content {
-    opacity: 100%;
-}
