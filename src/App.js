@@ -17,6 +17,7 @@ import WWULogo from './assets/imgs/projects/whichwayup.webp';
 import KopiLogo from './assets/imgs/projects/kopisu.webp';
 import EternalForestLogo from './assets/imgs/projects/eternalforest.webp';
 import HermannsburgLogo from './assets/imgs/projects/hermannsburg.webp';
+import GoogleLogo from './assets/imgs/projects/google.webp';
 
 class App extends Component {
     render() {
@@ -47,11 +48,6 @@ class App extends Component {
                                     <a className="linkLink" href="https://twitter.com/mark_saba_" target="_blank">
                                         <img className="linkImage" alt="Twitter" src={TwitterLogo} />
                                     </a>
-                                </div>
-
-                                <div className="links">
-                                    <a className="linkLink" href="pages/games.html"><u>Games</u></a>
-                                    <a className="linkLink" href="pages/projects.html"><u>Projects</u></a>
                                 </div>
                             </div>
                         </div>
@@ -100,6 +96,13 @@ class App extends Component {
                                 projectDescription="Description goes here"
                                 projectImage={HermannsburgLogo}
                                 projectLink="https://www.hermannsburgpotters.com.au/"
+                            />
+
+                            <Project
+                                projectName="Google XR Technologies"
+                                projectDescription="Description goes here"
+                                projectImage={GoogleLogo}
+                                projectLink="https://google.com.au/"
                             />
                         </div>
                     </section>
