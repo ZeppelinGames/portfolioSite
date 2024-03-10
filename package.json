@@ -2,7 +2,7 @@
   "name": "portfoliosite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zeppelingames.github.io/portfolioSite",
+  "homepage": "https://zeppelingames.github.io/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
