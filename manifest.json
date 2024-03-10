@@ -1,0 +1,12 @@
+{
+    "short_name" : "Mark Saba",
+    "name" : "Mark Saba",
+    "icon": {
+        "src":"favicon.gif",
+        "sizes": "128x128",
+        "type":"image/gif"
+    },
+    "start_url": "https://marksaba.com.au/",
+    "display":"standalone",
+    "theme_color": "#000000"
+}
