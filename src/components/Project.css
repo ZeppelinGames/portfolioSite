@@ -28,7 +28,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .project-title {
@@ -36,12 +36,27 @@
     font-weight: bold;
 }
 
-.project:hover .project-image {
+@media(hover:hover) {
+    .project:hover {
+        cursor: pointer;
+    }
+    .project:hover .project-image {
+        opacity: 25%;
+    }
+
+    .project:hover .project-content {
+        opacity: 100%;
+    }
+}
+
+.project.hover .project-image {
     opacity: 25%;
 }
-.project:hover .project-content {
+
+.project.hover .project-content {
     opacity: 100%;
 }
+
 
 .project-description {
     font-size: min(3vw, 1.25em);

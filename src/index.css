@@ -1,6 +1,7 @@
 @font-face {
-    font-family: ubuntu;
-    src: url(assets/fonts/ubuntumono-regular.ttf);
+    font-family: 'ubuntu';
+    src: url(assets/fonts/ubuntumono-regular.ttf), local('Arial');
+    font-display: swap;
 }
 
 :root {

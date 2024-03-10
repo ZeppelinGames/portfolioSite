@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Project from './components/Project';
 import './App.css';
 
-import GithubLogo from './assets/imgs/github-mark-white.png';
-import ItchLogo from './assets/imgs/itchio.png';
-import LinkedInLogo from './assets/imgs/linkedin.png';
-import TwitterLogo from './assets/imgs/twitter.png';
+import GithubLogo from './assets/imgs/github-mark-white.webp';
+import ItchLogo from './assets/imgs/itchio.webp';
+import LinkedInLogo from './assets/imgs/linkedin.webp';
+import TwitterLogo from './assets/imgs/twitter.webp';
 
 import ComputerSpin from './assets/imgs/compSpin.gif';
 import JoystickSpin from './assets/imgs/joySpinRev.gif';
@@ -25,8 +25,8 @@ class App extends Component {
             <div className="App">
                 <div id="main-window">
 
-                    <img id="backgroundLeft" src={ComputerSpin} />
-                    <img id="backgroundRight" src={JoystickSpin} />
+                    <img id="backgroundLeft" src={ComputerSpin} alt=''/>
+                    <img id="backgroundRight" src={JoystickSpin} alt=''/>
 
                     <div id="main-flex">
 
