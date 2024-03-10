@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.725d78f7.css",
+    "main.js": "/static/js/main.51217613.js",
+    "static/media/themasterspupil.webp": "/static/media/themasterspupil.56ba1802722a0af148e9.webp",
+    "static/media/ubuntumono-regular.ttf": "/static/media/ubuntumono-regular.9fa7d55c51063608f793.ttf",
+    "static/media/compSpin.gif": "/static/media/compSpin.45b72ee6b431bb1fa5fc.gif",
+    "static/media/hermannsburg.webp": "/static/media/hermannsburg.d1d208b2a48fa887e193.webp",
+    "static/media/joySpinRev.gif": "/static/media/joySpinRev.b96c71f9e4cabe5b904b.gif",
+    "static/media/twitter.png": "/static/media/twitter.00ee341f7b3054f9538b.png",
+    "static/media/whichwayup.webp": "/static/media/whichwayup.51313c6f92c868812608.webp",
+    "static/media/eternalforest.webp": "/static/media/eternalforest.81294591fe22929b6cf5.webp",
+    "static/media/linkedin.png": "/static/media/linkedin.e444943ffb185b1776b3.png",
+    "static/media/itchio.png": "/static/media/itchio.b021be035d73c3c6585e.png",
+    "static/media/kopisu.webp": "/static/media/kopisu.55d29eb2ea0af661bfdb.webp",
+    "static/media/google.webp": "/static/media/google.c377a640da8cf49ae709.webp",
+    "static/media/down.webp": "/static/media/down.7e03b6ca477205183892.webp",
+    "index.html": "/index.html",
+    "main.725d78f7.css.map": "/static/css/main.725d78f7.css.map",
+    "main.51217613.js.map": "/static/js/main.51217613.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.725d78f7.css",
+    "static/js/main.51217613.js"
+  ]
+}
