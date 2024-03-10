@@ -65,42 +65,42 @@ class App extends Component {
 
                             <Project
                                 projectName="The Master's Pupil"
-                                projectDescription="Description goes here"
+                                projectDescription="Worked on post-release bug fixes and patches"
                                 projectImage={TMPLogo}
                                 projectLink="https://www.themasterspupil.com/"
                             />
 
                             <Project
                                 projectName="Which Way Up"
-                                projectDescription="Description goes here"
+                                projectDescription="Game programmer and level designer using Unity/C#. Worked predominately on the 'Overload' gamemode and boost pad mechanics."
                                 projectImage={WWULogo}
                                 projectLink="https://www.whichwayup.info/"
                             />
 
                             <Project
                                 projectName="Kopi Su Studio Website"
-                                projectDescription="Description goes here"
+                                projectDescription="Developed home and work pages for Kopi Su's website following designer mockups. Developed using React"
                                 projectImage={KopiLogo}
                                 projectLink="https://www.kopisustudio.com/"
                             />
 
                             <Project
                                 projectName="The Eternal Forest"
-                                projectDescription="Description goes here"
+                                projectDescription="Developed iOS app utilising XR technologies for the Biennale of Architecture in Versailles, France in 2022. This project was in collaboration with Other Architects and Rowan Lear through Kopi Su Studio"
                                 projectImage={EternalForestLogo}
                                 projectLink="https://kopisustudio.com/work/eternalforest"
                             />
 
                             <Project
                                 projectName="Hermannsburg Potters Landing Page"
-                                projectDescription="Description goes here"
+                                projectDescription="Developed interactive homepage using Webflow and custom JS components catering towards clients updating content"
                                 projectImage={HermannsburgLogo}
                                 projectLink="https://www.hermannsburgpotters.com.au/"
                             />
 
                             <Project
                                 projectName="Google XR Technologies"
-                                projectDescription="Description goes here"
+                                projectDescription="Collaborated with Google through Kopi Su Studio to develop XR solutions."
                                 projectImage={GoogleLogo}
                                 projectLink="https://google.com.au/"
                             />
