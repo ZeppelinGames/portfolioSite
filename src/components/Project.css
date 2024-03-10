@@ -32,7 +32,7 @@
 }
 
 .project-title {
-    font-size: 3em;
+    font-size: min(5vw, 3em);
     font-weight: bold;
 }
 
@@ -44,6 +44,6 @@
 }
 
 .project-description {
-    font-size: 1.25 em;
+    font-size: min(3vw, 1.25em);
     font-weight: normal;
 }
