@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolioSite/static/css/main.1c961236.css",
+    "main.js": "/portfolioSite/static/js/main.ed626de6.js",
+    "static/media/themasterspupil.webp": "/portfolioSite/static/media/themasterspupil.56ba1802722a0af148e9.webp",
+    "static/media/ubuntumono-regular.ttf": "/portfolioSite/static/media/ubuntumono-regular.9fa7d55c51063608f793.ttf",
+    "static/media/compSpin.gif": "/portfolioSite/static/media/compSpin.45b72ee6b431bb1fa5fc.gif",
+    "static/media/hermannsburg.webp": "/portfolioSite/static/media/hermannsburg.d1d208b2a48fa887e193.webp",
+    "static/media/joySpinRev.gif": "/portfolioSite/static/media/joySpinRev.b96c71f9e4cabe5b904b.gif",
+    "static/media/twitter.png": "/portfolioSite/static/media/twitter.00ee341f7b3054f9538b.png",
+    "static/media/whichwayup.webp": "/portfolioSite/static/media/whichwayup.51313c6f92c868812608.webp",
+    "static/media/eternalforest.webp": "/portfolioSite/static/media/eternalforest.81294591fe22929b6cf5.webp",
+    "static/media/linkedin.png": "/portfolioSite/static/media/linkedin.e444943ffb185b1776b3.png",
+    "static/media/itchio.png": "/portfolioSite/static/media/itchio.b021be035d73c3c6585e.png",
+    "static/media/kopisu.webp": "/portfolioSite/static/media/kopisu.55d29eb2ea0af661bfdb.webp",
+    "static/media/google.webp": "/portfolioSite/static/media/google.c377a640da8cf49ae709.webp",
+    "static/media/down.webp": "/portfolioSite/static/media/down.7e03b6ca477205183892.webp",
+    "index.html": "/portfolioSite/index.html",
+    "main.1c961236.css.map": "/portfolioSite/static/css/main.1c961236.css.map",
+    "main.ed626de6.js.map": "/portfolioSite/static/js/main.ed626de6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c961236.css",
+    "static/js/main.ed626de6.js"
+  ]
+}
