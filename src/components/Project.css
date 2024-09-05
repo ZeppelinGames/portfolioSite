@@ -2,7 +2,16 @@
     position: relative;
     box-sizing: border-box;
 
-    width: min(50vh, 100%);
+    width: min(40vh, 100%);
+
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.project.outline {
+    border: 2px white solid;
+    box-sizing: border-box;
+    border-radius: 1em;
 }
 
 .project-image {
@@ -32,18 +41,32 @@
 }
 
 .project-title {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .project:hover .project-image {
     opacity: 25%;
 }
+
 .project:hover .project-content {
     opacity: 100%;
 }
 
 .project-description {
-    font-size: 1.25 em;
+    font-size: 1.25em;
     font-weight: normal;
+}
+
+@media screen and (max-width: 540px) {
+    .project-content {
+        margin: 0;
+    }
+
+    .project-title {
+        font-size: 1.25em;
+    }
+    .project-description {
+        font-size: 0.75em;
+    }
 }

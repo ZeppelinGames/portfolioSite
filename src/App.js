@@ -12,12 +12,19 @@ import JoystickSpin from './assets/imgs/joySpinRev.gif';
 
 import ScrollArrow from './assets/imgs/down.webp';
 
+// Projects
 import TMPLogo from './assets/imgs/projects/themasterspupil.webp';
 import WWULogo from './assets/imgs/projects/whichwayup.webp';
 import KopiLogo from './assets/imgs/projects/kopisu.webp';
 import EternalForestLogo from './assets/imgs/projects/eternalforest.webp';
 import HermannsburgLogo from './assets/imgs/projects/hermannsburg.webp';
 import GoogleLogo from './assets/imgs/projects/google.webp';
+import FatalError from './assets/imgs/projects/fatalerror.webp';
+
+// Gamejams
+import SoleLogo from './assets/imgs/gamejams/sole.webp';
+import CardboardChefLogo from './assets/imgs/gamejams/cardboardchef.webp';
+import ReunionLogo from './assets/imgs/gamejams/reunion.webp';
 
 class App extends Component {
     render() {
@@ -59,9 +66,16 @@ class App extends Component {
                 <hr />
 
                 <div id="main-content">
-                    <section id="projects-section">
+                    <section id="projects-section" className='projectSection'>
                         <div className="content-title">Projects</div>
                         <div className="projects">
+
+                            <Project
+                                projectName="Pixel Pasture"
+                                projectDescription="Co-founder ig"
+                                projectImage={TMPLogo}
+                                projectLink="https://www.pixelpasture.studio/"
+                            />
 
                             <Project
                                 projectName="The Master's Pupil"
@@ -106,6 +120,55 @@ class App extends Component {
                             />
                         </div>
                     </section>
+
+                    <section id="gamejams-section" className='projectSection'>
+                        <div className="content-title">Game Jams</div>
+                        <div className="projects">
+
+                            <Project
+                                projectName="sole"
+                                projectDescription={(<>
+                                    <i>"you play as a lone soul travelling to its next life"</i>
+                                    <div>This game was made by Aniko (Art) and myself (Gameplay) in three days for the first <a href='https://macs.codes/'>MACS</a> game jam</div> 
+                                </>)}
+                                projectImage={SoleLogo}
+                                projectLink="https://zeppelin-games.itch.io/sole"
+                            />
+                             <Project
+                                projectName="Cardboard Chef"
+                                projectDescription="This game was made in 48 hours for Macquarie University's 3rd Game Jam with the theme of 'Revive' and constraint of 'Public Domain'"
+                                projectImage={CardboardChefLogo}
+                                projectLink="https://zeppelin-games.itch.io/cardboard-chef"
+                            />
+                             <Project
+                                projectName="Reunion"
+                                projectDescription={(<>
+                                    <i>"Help reunite people who have lost their friends or loved ones in a crowd of people."</i>
+                                    <div>Created in 48hours for Macquarie University's 1st game jam, themed 'reunion', placing 1st overall</div> 
+                                </>)}
+                                projectImage={ReunionLogo}
+                                projectLink="https://zeppelin-games.itch.io/mq-game-jam"
+                                outline={true}
+                            />
+                        </div>
+                    </section>
+
+                    {/* <section id="misc-section" className='projectSection'>
+                        <div className="content-title">Misc</div>
+                        <div className="projects">
+                            <Project
+                                projectName="Fatal Error Filter"
+                                projectDescription={
+                                    <>
+                                        <p>A filter for Snapchat and Instagram built using Lens Studio and Meta Spark Studio respectively, amassing over 38m impressions, 28m plays and 800k shares.</p>
+                                        <div>Open in <a target='_blank' href="https://www.instagram.com/ar/4972798932786244/">Instagram</a></div>
+                                        <div>Open in <a target='_blank' href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=5ee53801d555442bbc941df11b7db9fa&metadata=01">Snapchat</a></div>
+                                    </>
+                                }
+                                projectImage={FatalError}
+                            />
+                        </div>
+                    </section> */}
                 </div>
 
                 <hr />
