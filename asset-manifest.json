@@ -1,27 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.105959d7.css",
-    "main.js": "/static/js/main.0f6d0acc.js",
+    "main.css": "/static/css/main.c17a6f78.css",
+    "main.js": "/static/js/main.36087acd.js",
     "static/media/ubuntumono-regular.ttf": "/static/media/ubuntumono-regular.9fa7d55c51063608f793.ttf",
     "static/media/compSpin.gif": "/static/media/compSpin.45b72ee6b431bb1fa5fc.gif",
     "static/media/joySpinRev.gif": "/static/media/joySpinRev.b96c71f9e4cabe5b904b.gif",
     "static/media/hermannsburg.webp": "/static/media/hermannsburg.78c98d835a1a172a54e6.webp",
     "static/media/themasterspupil.webp": "/static/media/themasterspupil.a3f64bf93b317ad6a786.webp",
     "static/media/whichwayup.webp": "/static/media/whichwayup.1ff2c0ed09a8f8b19b33.webp",
+    "static/media/PP.webp": "/static/media/PP.661254453f5a5e7a976b.webp",
     "static/media/eternalforest.webp": "/static/media/eternalforest.2bd51390afbeefffe50d.webp",
+    "static/media/IWLUAITMOMNHESMANMDIABAWM.webp": "/static/media/IWLUAITMOMNHESMANMDIABAWM.da34290bed63163a595e.webp",
     "static/media/kopisu.webp": "/static/media/kopisu.33b221d7b1a1b3a02ed8.webp",
+    "static/media/cardboardchef.webp": "/static/media/cardboardchef.7cff571a08202f89321f.webp",
     "static/media/itchio.webp": "/static/media/itchio.826c452483d9c2f3eab3.webp",
+    "static/media/reunion.webp": "/static/media/reunion.52b71792bfe1a7398792.webp",
+    "static/media/fatalerror.webp": "/static/media/fatalerror.e48434de0d270412f4af.webp",
+    "static/media/sole.webp": "/static/media/sole.766bd495230b0bbed4c3.webp",
     "static/media/github-mark-white.webp": "/static/media/github-mark-white.91d95675cfab480c89ec.webp",
+    "static/media/Seconds20.webp": "/static/media/Seconds20.65ea7d543e572c461e72.webp",
+    "static/media/PrettyFlower.webp": "/static/media/PrettyFlower.87af66c6ccd18df084ae.webp",
     "static/media/google.webp": "/static/media/google.226c69a6281a462c3324.webp",
     "static/media/twitter.webp": "/static/media/twitter.97f9389c7cdf5e91742b.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.f38e9b7fb5386549ca79.webp",
-    "static/media/down.webp": "/static/media/down.7e03b6ca477205183892.webp",
+    "static/media/BlankProject.webp": "/static/media/BlankProject.126c3eee8747be4f617a.webp",
     "index.html": "/index.html",
-    "main.105959d7.css.map": "/static/css/main.105959d7.css.map",
-    "main.0f6d0acc.js.map": "/static/js/main.0f6d0acc.js.map"
+    "static/media/down.webp": "/static/media/down.7e03b6ca477205183892.webp",
+    "main.c17a6f78.css.map": "/static/css/main.c17a6f78.css.map",
+    "main.36087acd.js.map": "/static/js/main.36087acd.js.map"
   },
   "entrypoints": [
-    "static/css/main.105959d7.css",
-    "static/js/main.0f6d0acc.js"
+    "static/css/main.c17a6f78.css",
+    "static/js/main.36087acd.js"
   ]
 }
