@@ -1,4 +1,5 @@
 import './Project.css';
+import BlankImage from '../assets/imgs/BlankProject.webp';
 
 function Project({ projectName, projectDescription, projectImage, projectLink, outline }) {
     return (
@@ -16,7 +17,9 @@ function Project({ projectName, projectDescription, projectImage, projectLink, o
 function MainProjectContent({ projectName, projectDescription, projectImage }) {
     return (
         <>
-            <img src={projectImage} className='project-image' />
+            <img src={(projectImage ? projectImage : BlankImage)} className='project-image' />
+            {(!projectImage ? <div className='center-title'>{projectName}</div> : <></>)}
+
             <div className='project-content'>
                 <div className='project-title'>
                     {projectName}
