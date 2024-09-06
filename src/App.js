@@ -78,7 +78,7 @@ class App extends Component {
                                 projectName="Pixel Pasture"
                                 projectDescription="Co-founder/Lead Developer. Pixel Pasture hosts various community events in Sydney including game jams and Game-A-Week."
                                 projectImage={PixelPasture}
-                                projectLink="https://www.pixelpasture.studio/"
+                                projectLink="https://pixelpasture.studio/"
                             />
 
                             <Project
@@ -133,7 +133,7 @@ class App extends Component {
                                 projectName="sole"
                                 projectDescription={(<>
                                     <i>"you play as a lone soul travelling to its next life"</i>
-                                    <div>This game was made by Aniko (Art) and myself (Gameplay) in three days for the first <a href='https://macs.codes/'>MACS</a> game jam</div>
+                                    <div>This game was made by Aniko (Art) and myself (Gameplay) in three days for the first <a href='https://macs.codes/' target='_blank'>MACS</a> game jam</div>
                                 </>)}
                                 projectImage={SoleLogo}
                                 projectLink="https://zeppelin-games.itch.io/sole"
@@ -158,7 +158,7 @@ class App extends Component {
                                 projectName="IWLUAITMOMNHESMANMDIABAWM"
                                 projectDescription={(<>
                                     <i> or "i was left unsupervised and in turn may or may not have eated several magnets and now my doctor is a bit angry with me" for long</i>
-                                    <div>Created in 48hours for <a href='https://macs.codes/'>MACS</a> Jam 2, themed 'Magnet' and constraint 'camera must be stationary'</div>
+                                    <div>Created in 48hours for <a href='https://macs.codes/' target='_blank'>MACS</a> Jam 2, themed 'Magnet' and constraint 'camera must be stationary'</div>
                                 </>)}
                                 projectImage={IWLUAITMOMNHESMANMDIABAWM}
                                 projectLink="https://zeppelin-games.itch.io/macs-jam-2"
@@ -171,7 +171,7 @@ class App extends Component {
                             />
                             <Project
                                 projectName="20 Seconds"
-                                projectDescription={(<div>A game made for the <a href="https://itch.io/jam/20-second-game-jam/rate/1823404">20 Second Game Jam</a>. Line up your paddle with the incoming balls and match their colour. Written with <a href='https://p5js.org/'>p5js</a></div>)}
+                                projectDescription={(<div>A game made for the <a href="https://itch.io/jam/20-second-game-jam/" target='_blank'>20 Second Game Jam</a>. Line up your paddle with the incoming balls and match their colour. Written with <a href='https://p5js.org/' target='_blank'>p5js</a></div>)}
                                 projectImage={Seconds20}
                                 projectLink="https://zeppelin-games.itch.io/20-second-game-jam"
                             />
@@ -185,7 +185,7 @@ class App extends Component {
                                 projectName="360"
                                 projectDescription={(<>
                                     <div>First person puzzle game with a 360 degree FOV.</div>
-                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024">Game A Week Syd 2024</a>.</div>
+                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024" target='_blank'>Game A Week Syd 2024</a>.</div>
                                 </>
                                 )}
                                 // projectImage={Seconds20}
@@ -196,7 +196,7 @@ class App extends Component {
                                 projectName="Mice Fight"
                                 projectDescription={(<>
                                     <div>Local multiplayer bullet hell game where each player's controller is a mouse (yes, plug multiple mice into 1 computer).</div>
-                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024">Game A Week Syd 2024</a>.</div>
+                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024" target='_blank'>Game A Week Syd 2024</a>.</div>
                                 </>
                                 )}
                                 // projectImage={Seconds20}
