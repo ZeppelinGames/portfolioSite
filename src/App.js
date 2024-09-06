@@ -12,12 +12,23 @@ import JoystickSpin from './assets/imgs/joySpinRev.gif';
 
 import ScrollArrow from './assets/imgs/down.webp';
 
+// Projects
+import PixelPasture from './assets/imgs/projects/PP.webp';
 import TMPLogo from './assets/imgs/projects/themasterspupil.webp';
 import WWULogo from './assets/imgs/projects/whichwayup.webp';
 import KopiLogo from './assets/imgs/projects/kopisu.webp';
 import EternalForestLogo from './assets/imgs/projects/eternalforest.webp';
 import HermannsburgLogo from './assets/imgs/projects/hermannsburg.webp';
 import GoogleLogo from './assets/imgs/projects/google.webp';
+import FatalError from './assets/imgs/projects/fatalerror.webp';
+
+// Gamejams
+import SoleLogo from './assets/imgs/gamejams/sole.webp';
+import CardboardChefLogo from './assets/imgs/gamejams/cardboardchef.webp';
+import ReunionLogo from './assets/imgs/gamejams/reunion.webp';
+import IWLUAITMOMNHESMANMDIABAWM from './assets/imgs/gamejams/IWLUAITMOMNHESMANMDIABAWM.webp';
+import PrettyFlower from './assets/imgs/gamejams/PrettyFlower.webp';
+import Seconds20 from './assets/imgs/gamejams/Seconds20.webp';
 
 class App extends Component {
     render() {
@@ -59,9 +70,16 @@ class App extends Component {
                 <hr />
 
                 <div id="main-content">
-                    <section id="projects-section">
+                    <section id="projects-section" className='projectSection'>
                         <div className="content-title">Projects</div>
                         <div className="projects">
+
+                            <Project
+                                projectName="Pixel Pasture"
+                                projectDescription="Co-founder/Lead Developer. Pixel Pasture hosts various community events in Sydney including game jams and Game-A-Week."
+                                projectImage={PixelPasture}
+                                projectLink="https://www.pixelpasture.studio/"
+                            />
 
                             <Project
                                 projectName="The Master's Pupil"
@@ -88,7 +106,7 @@ class App extends Component {
                                 projectName="The Eternal Forest"
                                 projectDescription="Developed iOS app utilising XR technologies for the Biennale of Architecture in Versailles, France in 2022. This project was in collaboration with Other Architects and Rowan Lear through Kopi Su Studio"
                                 projectImage={EternalForestLogo}
-                                projectLink="https://kopisustudio.com/work/eternalforest"
+                                projectLink="https://www.kopisustudio.com/the-eternal-forest"
                             />
 
                             <Project
@@ -100,12 +118,110 @@ class App extends Component {
 
                             <Project
                                 projectName="Google XR Technologies"
-                                projectDescription="Collaborated with Google through Kopi Su Studio to develop XR solutions."
+                                projectDescription="Collaborated with Google through Kopi Su Studio to develop XR solutions for Google Maps"
                                 projectImage={GoogleLogo}
                                 projectLink="https://google.com.au/"
                             />
                         </div>
                     </section>
+
+                    <section id="gamejams-section" className='projectSection'>
+                        <div className="content-title">Game Jams</div>
+                        <div className="projects">
+
+                            <Project
+                                projectName="sole"
+                                projectDescription={(<>
+                                    <i>"you play as a lone soul travelling to its next life"</i>
+                                    <div>This game was made by Aniko (Art) and myself (Gameplay) in three days for the first <a href='https://macs.codes/'>MACS</a> game jam</div>
+                                </>)}
+                                projectImage={SoleLogo}
+                                projectLink="https://zeppelin-games.itch.io/sole"
+                            />
+                            <Project
+                                projectName="Cardboard Chef"
+                                projectDescription="This game was made in 48 hours for Macquarie University's 3rd Game Jam with the theme of 'Revive' and constraint of 'Public Domain'"
+                                projectImage={CardboardChefLogo}
+                                projectLink="https://zeppelin-games.itch.io/cardboard-chef"
+                            />
+                            <Project
+                                projectName="Reunion"
+                                projectDescription={(<>
+                                    <i>"Help reunite people who have lost their friends or loved ones in a crowd of people."</i>
+                                    <div>Created in 48hours for Macquarie University's 1st game jam, themed 'reunion', placing 1st overall</div>
+                                </>)}
+                                projectImage={ReunionLogo}
+                                projectLink="https://zeppelin-games.itch.io/mq-game-jam"
+                                outline={true}
+                            />
+                            <Project
+                                projectName="IWLUAITMOMNHESMANMDIABAWM"
+                                projectDescription={(<>
+                                    <i> or "i was left unsupervised and in turn may or may not have eated several magnets and now my doctor is a bit angry with me" for long</i>
+                                    <div>Created in 48hours for <a href='https://macs.codes/'>MACS</a> Jam 2, themed 'Magnet' and constraint 'camera must be stationary'</div>
+                                </>)}
+                                projectImage={IWLUAITMOMNHESMANMDIABAWM}
+                                projectLink="https://zeppelin-games.itch.io/macs-jam-2"
+                            />
+                            <Project
+                                projectName="Pretty Flower"
+                                projectDescription="A short puzzle platformer game made for Ludum Dare 48 compo."
+                                projectImage={PrettyFlower}
+                                projectLink="https://zeppelin-games.itch.io/pretty-flower"
+                            />
+                            <Project
+                                projectName="20 Seconds"
+                                projectDescription={(<div>A game made for the <a href="https://itch.io/jam/20-second-game-jam/rate/1823404">20 Second Game Jam</a>. Line up your paddle with the incoming balls and match their colour. Written with <a href='https://p5js.org/'>p5js</a></div>)}
+                                projectImage={Seconds20}
+                                projectLink="https://zeppelin-games.itch.io/20-second-game-jam"
+                            />
+                        </div>
+                    </section>
+
+                    <section id="gamejams-section" className='projectSection'>
+                        <div className="content-title">Experimental Games</div>
+                        <div className="projects">
+                            <Project
+                                projectName="360"
+                                projectDescription={(<>
+                                    <div>First person puzzle game with a 360 degree FOV.</div>
+                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024">Game A Week Syd 2024</a>.</div>
+                                </>
+                                )}
+                                // projectImage={Seconds20}
+                                outline={true}
+                                projectLink="https://zeppelin-games.itch.io/game-a-week-1"
+                            />
+                            <Project
+                                projectName="Mice Fight"
+                                projectDescription={(<>
+                                    <div>Local multiplayer bullet hell game where each player's controller is a mouse (yes, plug multiple mice into 1 computer).</div>
+                                    <div> A game made for <a href="https://pixelpasture.studio/game-a-week2024">Game A Week Syd 2024</a>.</div>
+                                </>
+                                )}
+                                // projectImage={Seconds20}
+                                outline={true}
+                                projectLink="https://zeppelin-games.itch.io/gaw-3"
+                            />
+                        </div>
+                    </section>
+
+                    {/* <section id="misc-section" className='projectSection'>
+                        <div className="content-title">Misc</div>
+                        <div className="projects">
+                            <Project
+                                projectName="Fatal Error Filter"
+                                projectDescription={
+                                    <>
+                                        <p>A filter for Snapchat and Instagram built using Lens Studio and Meta Spark Studio respectively, amassing over 38m impressions, 28m plays and 800k shares.</p>
+                                        <div>Open in <a target='_blank' href="https://www.instagram.com/ar/4972798932786244/">Instagram</a></div>
+                                        <div>Open in <a target='_blank' href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=5ee53801d555442bbc941df11b7db9fa&metadata=01">Snapchat</a></div>
+                                    </>
+                                }
+                                projectImage={FatalError}
+                            />
+                        </div>
+                    </section> */}
                 </div>
 
                 <hr />

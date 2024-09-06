@@ -22,7 +22,8 @@
     bottom: 7%;
 }
 
-#root, .App {
+#root,
+.App {
     height: 100%;
 }
 
@@ -48,20 +49,6 @@
     font-size: 2em;
 }
 
-@media screen and (max-width: 769px) {
-    #main-flex {
-        flex-direction: column;
-    }
-
-    #main {
-        width: auto !important;
-    }
-
-    .project-image {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-}
 
 #main {
     width: 0;
@@ -79,6 +66,11 @@
 
 #main-content {
     margin: 0em 4em 0em 4em;
+}
+
+.projectSection {
+    /* max-width: 75%; */
+    margin: auto;
 }
 
 .content-title {
@@ -102,3 +94,28 @@
     text-align: center;
 }
 
+
+@media screen and (max-width: 769px) {
+    #main-flex {
+        flex-direction: column;
+    }
+
+    #main {
+        width: auto !important;
+    }
+
+    .project-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #main-content {
+        margin: 0 1em 0 1em;
+    }
+
+    .content-title {
+        margin: 1em 0 1em 0;
+    }
+}

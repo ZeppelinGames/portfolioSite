@@ -1,37 +1,25 @@
-import { useState, useEffect, useRef } from 'react';
 import './Project.css';
+import BlankImage from '../assets/imgs/BlankProject.webp';
 
-function Project({ projectName, projectDescription, projectImage, projectLink }) {
-    const [width, setWidth] = useState(window.innerWidth);
-    const mainDiv = useRef(null);
-
-    function handleWindowSizeChange() {
-        setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
-
-    const isMobile = width <= 768;
-
-    function MobileClick() {
-        if (isMobile) {
-            if (mainDiv.current.classList.contains("hover")) {
-                window.open(projectLink, '_blank').focus();
-            } else {
-                mainDiv.current.classList.add("hover");
-            }
-        } else {
-            window.open(projectLink, '_blank').focus();
-        }
-    }
-
+function Project({ projectName, projectDescription, projectImage, projectLink, outline }) {
     return (
-        <div className='project' onClick={MobileClick} href={projectLink} ref={mainDiv}>
-            <img src={projectImage} className='project-image' alt={projectName + " background"} />
+        <>
+            <a
+                className={`project ${outline ? 'outline' : ''}`}
+                href={projectLink ? projectLink : false}
+                target={projectLink ? '_blank' : false}>
+                {MainProjectContent({ projectName, projectDescription, projectImage })}
+            </a>
+        </>
+    )
+}
+
+function MainProjectContent({ projectName, projectDescription, projectImage }) {
+    return (
+        <>
+            <img src={(projectImage ? projectImage : BlankImage)} className='project-image' />
+            {(!projectImage ? <div className='center-title'>{projectName}</div> : <></>)}
+
             <div className='project-content'>
                 <div className='project-title'>
                     {projectName}
@@ -40,8 +28,8 @@ function Project({ projectName, projectDescription, projectImage, projectLink })
                     {projectDescription}
                 </div>
             </div>
-        </div>
-    )
+        </>
+    );
 }
 
 export default Project;
