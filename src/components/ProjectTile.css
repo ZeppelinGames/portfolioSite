@@ -86,9 +86,3 @@
     font-size: 0.75em;
     font-weight: normal;
 }
-
-@media screen and (max-width: 540px) {
-    .project-content {
-        margin: 0;
-    }
-}
