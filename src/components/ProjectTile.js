@@ -1,7 +1,7 @@
-import './Project.css';
+import './ProjectTile.css';
 import BlankImage from '../assets/imgs/BlankProject.webp';
 
-function Project({ projectName, projectDescription, projectImage, projectLink, outline }) {
+export default function ProjectTile({ projectName, projectDescription, projectImage, projectLink, outline }) {
     return (
         <>
             <a
@@ -31,5 +31,3 @@ function MainProjectContent({ projectName, projectDescription, projectImage }) {
         </>
     );
 }
-
-export default Project;
