@@ -56,12 +56,13 @@ class App extends Component {
                 <div id="main-content">
                     {Object.keys(projectCategories).map((k) => {
                         return (
-                            <>
+                            <section key={k}>
                                 <div className="content-title">{k}</div>
                                 <div className="projects">
                                     {projectCategories[k].map((p) => {
                                         return (
                                             <ProjectTile
+                                                key={p.projectName}
                                                 projectName={p.projectName}
                                                 projectDescription={p.projectDescription}
                                                 projectImage={p.projectImage}
@@ -71,7 +72,7 @@ class App extends Component {
                                         )
                                     })}
                                 </div>
-                            </>
+                            </section>
                         )
                     })}
                 </div>
