@@ -3,21 +3,9 @@ import BlankImage from '../assets/imgs/BlankProject.webp';
 
 export default function ProjectTile({ projectName, projectDescription, projectImage, projectLink, outline }) {
     return (
-        <>
-            <a
-                className={`project ${outline ? 'outline' : ''}`}
-                href={projectLink ? projectLink : false}
-                target={projectLink ? '_blank' : false}>
-                {MainProjectContent({ projectName, projectDescription, projectImage })}
-            </a>
-        </>
-    )
-}
+        <div className={`project ${outline ? 'outline' : ''}`}>
 
-function MainProjectContent({ projectName, projectDescription, projectImage }) {
-    return (
-        <>
-            <img src={(projectImage ? projectImage : BlankImage)} className='project-image' alt={projectName}/>
+            <img src={(projectImage ? projectImage : BlankImage)} className='project-image' alt={projectName} />
             {(!projectImage ? <div className='center-title'>{projectName}</div> : <></>)}
 
             <div className='project-content'>
@@ -26,8 +14,11 @@ function MainProjectContent({ projectName, projectDescription, projectImage }) {
                 </div>
                 <div className='project-description'>
                     {projectDescription}
+
+                    <a className='read-more' href={projectLink ? projectLink : false} target={projectLink ? '_blank' : false}>Read More</a>
                 </div>
             </div>
-        </>
-    );
+
+        </div>
+    )
 }

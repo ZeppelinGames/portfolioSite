@@ -7,6 +7,7 @@ import EternalForestLogo from './assets/imgs/projects/eternalforest.webp';
 import HermannsburgLogo from './assets/imgs/projects/hermannsburg.webp';
 import GoogleLogo from './assets/imgs/projects/google.webp';
 import FatalError from './assets/imgs/projects/fatalerror.webp';
+import TwangLogo from './assets/imgs/projects/twang.webp';
 
 // Gamejams
 import SoleLogo from './assets/imgs/gamejams/sole.webp';
@@ -58,6 +59,13 @@ const GoogleXRTechnologies = {
     "projectImage":  GoogleLogo ,
     "projectLink": "https://google.com.au/",
 };
+const Twang = {
+    "projectName": "Twang",
+    "projectDescription": "Active project. Initally a game jam game now receiving active updates. Worked on refactoring game jam code and adding new features, mechanics and polish",
+    "projectImage": TwangLogo,
+    "projectLink": "https://elanmakesgames.itch.io/twang-game"
+}
+
 const sole = {
     "projectName": "sole",
     "projectDescription": (<>
@@ -86,7 +94,7 @@ const Reunion = {
 const IWLUAITMOMNHESMANMDIABAWM = {
     "projectName": "IWLUAITMOMNHESMANMDIABAWM",
     "projectDescription": (<>
-        <i> or "i was left unsupervised and in turn may or may not have eated several magnets and now my doctor is a bit angry with me" for long</i>
+        <i> or "i was left unsupervised and in turn may or may not have eated several magnets and now my doctor is a bit angry with me"</i>
         <div>Created in 48hours for <a href='https://macs.codes/' target='_blank'>MACS</a> Jam 2, themed 'Magnet' and constraint 'camera must be stationary'</div>
     </>),
     "projectImage":  IWLUAITMOMNHESMANMDIABAWMLogo ,
@@ -134,7 +142,8 @@ const projectCategories = {
         KopiSuStudioWebsite,
         TheEternalForest,
         HermannsburgPottersLandingPage,
-        GoogleXRTechnologies
+        GoogleXRTechnologies,
+        Twang,
     ],
     "Game Jams": [
         sole,
