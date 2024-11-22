@@ -6,6 +6,7 @@ import GithubLogo from './assets/imgs/socials/github-mark-white.webp';
 import ItchLogo from './assets/imgs/socials/itchio.webp';
 import LinkedInLogo from './assets/imgs/socials/linkedin.webp';
 import TwitterLogo from './assets/imgs/socials/twitter.webp';
+import BskyLogo from './assets/imgs/socials/BskyIcon.webp';
 
 import ComputerSpin from './assets/imgs/compSpin.gif';
 import JoystickSpin from './assets/imgs/joySpinRev.gif';
@@ -42,6 +43,9 @@ class App extends Component {
                                     </a>
                                     <a className="linkLink" href="https://twitter.com/mark_saba_" target="_blank">
                                         <img className="linkImage" alt="Twitter" src={TwitterLogo} />
+                                    </a>
+                                    <a className="linkLink" href="https://bsky.app/profile/mark.pixelpasture.studio" target="_blank">
+                                        <img className="linkImage" alt="Bsky" src={BskyLogo} />
                                     </a>
                                 </div>
                             </div>

@@ -118,7 +118,7 @@ ul {
     left: calc(50% - 25px);
 
     width: 5%;
-    max-width: 50px;
+    max-width: 25px;
     animation: jumpInfinite 1.5s infinite;
 }
 
