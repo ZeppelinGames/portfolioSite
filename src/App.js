@@ -84,7 +84,7 @@ class App extends Component {
                 <hr />
 
                 <section className="footer">
-                    Mark Saba 2024
+                    Mark Saba {new Date().getFullYear()}
                 </section>
             </div>
         );

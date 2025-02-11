@@ -61,7 +61,7 @@ const GoogleXRTechnologies = {
 };
 const Twang = {
     "projectName": "Twang",
-    "projectDescription": "Active project. Initally a game jam game now receiving active updates. Worked on refactoring game jam code and adding new features, mechanics and polish",
+    "projectDescription": "Initally a game jam game now receiving active updates. Worked on refactoring game jam code and adding new features, mechanics and polish",
     "projectImage": TwangLogo,
     "projectLink": "https://elanmakesgames.itch.io/twang-game"
 }
