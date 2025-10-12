@@ -8,6 +8,7 @@ import HermannsburgLogo from './assets/imgs/projects/hermannsburg.webp';
 import GoogleLogo from './assets/imgs/projects/google.webp';
 import FatalError from './assets/imgs/projects/fatalerror.webp';
 import TwangLogo from './assets/imgs/projects/twang.webp';
+import DragonValleyLogo from './assets/imgs/projects/dragonvalley.webp';
 
 // Gamejams
 import SoleLogo from './assets/imgs/gamejams/sole.webp';
@@ -23,6 +24,12 @@ const PixelPasture = {
     "projectImage": PixelPastureLogo,
     "projectLink": "https://pixelpasture.studio/",
 };
+const DragonValley = {
+    "projectName": "Dragon Valley",
+    "projectDescription": "Core developer working with Unity/C#. Player movement/control systems, tech art and UNET. Currently in pre-production.",
+    "projectImage": DragonValleyLogo,
+    "projectLink": "https://www.instagram.com/p/DHIPV3cvIo9/?hl=en",
+}
 const TheMastersPupil = {
     "projectName": "The Master's Pupil",
     "projectDescription": "Worked on post-release bug fixes and patches",
@@ -137,6 +144,7 @@ const MiceFight = {
 const projectCategories = {
     "Projects": [
         PixelPasture,
+        DragonValley,
         TheMastersPupil,
         WhichWayUp,
         KopiSuStudioWebsite,
