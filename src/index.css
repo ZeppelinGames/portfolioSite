@@ -1,138 +1,21 @@
-@font-face {
-    font-family: 'ubuntu';
-    src: url(assets/fonts/ubuntumono-regular.ttf), local('Arial');
-    font-display: swap;
-}
+@import "tailwindcss";
 
 :root {
-    --background-color: black;
-    --foreground-color: #c4c4c4;
-    --highlight-color: #c38d23;
-
-    --main-padding: 16px;
-    --border: 8px;
+  color: #f5f5f5;
+  background-color: #050505;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    height: 100vh;
-    width: 100%;
+@layer utilities {
+  .render-pixelated {
+    image-rendering: pixelated;
+  }
 
-    background-color: var(--background-color);
-    color: var(--foreground-color);
-
-    font-family: ubuntu;
-
-    overflow-x: hidden;
-
-    user-select: none;
-}
-
-img {
-    -webkit-user-drag: none;
-}
-
-body {
-    margin: auto;
-    height: 100%;
-    max-width: 100%;
-
-    padding-top: 5vh;
-    padding-bottom: 10vh;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color:#00ff00;
-}
-
-hr {
-    margin: 1em auto 1em auto;
-    width: 90vw;
-}
-
-.bar {
-    background-color: var(--foreground-color);
-    height: 32px;
-    margin: 8px;
-}
-
-.content-window {
-    /* background-color: var(--background-color) !important; */
-    /* border: var(--border) solid var(--foreground-color); */
-
-    padding: var(--main-padding);
-
-    color: white;
-
-    flex: 1;
-
-    text-align: center;
-}
-
-ul {
-    list-style: square;
-}
-
-.title {
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: 1em;
-}
-
-.text-content {
-    font-size: 0.5em;
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    gap: 0.5em;
-
-    max-height: 32px;
-}
-
-.linkImage:hover {
-    filter: brightness(50%) sepia(100) hue-rotate(87deg) saturate(1000%) brightness(100%);
-}
-
-.linkLink {
-    display: contents;
-    text-decoration: underline;
-}
-
-.linkImage {
-    height: 100%;
-}
-
-.downArrow {
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 25px);
-
-    width: 5%;
-    max-width: 25px;
-    animation: jumpInfinite 1.5s infinite;
-}
-
-@keyframes jumpInfinite {
-    0% {
-        bottom: 20px;
-    }
-
-    50% {
-        bottom: 40px;
-        opacity: 50%;
-    }
-
-    100% {
-        bottom: 20px;
-    }
+  .render-crisp-edges {
+    image-rendering: crisp-edges;
+  }
 }
